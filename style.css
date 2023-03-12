@@ -1,3 +1,56 @@
 h1 {
     color: green;
 }
+
+.based-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(209, 207, 207);
+}
+
+.based-block .cells {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+}
+.cell {
+    display: flex;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    font-size: 700;
+}
+
+.cell-title {
+    width: 100%;
+    font-size: large;
+    font-weight: 700;
+}
+.cell-icon {
+    width: 18px;
+    text-align: center;
+    display: none;
+}
+
+details .cell-icon-collapsed, details .cell-icon-expanded {
+    display: none;
+}
+
+details[open] .cell-icon-expanded {
+    display: unset;
+}
+
+details:not([open]) .cell-icon-collapsed {
+    display: unset;
+}
+
+.cells:hover .cell-icon {
+    display: unset;
+}
