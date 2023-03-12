@@ -1,5 +1,13 @@
+* {
+    font-family: Fredoka One;
+}
+body {
+    background-color: rgb(252, 238, 223);
+    margin: 0;
+}
+
 h1 {
-    color: green;
+    color: rgb(209, 144, 74);
 }
 
 .based-block {
@@ -9,7 +17,6 @@ h1 {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    background-color: rgb(209, 207, 207);
 }
 
 .based-block .cells {
@@ -18,20 +25,29 @@ h1 {
     justify-content: space-around;
     width: 60%;
 }
-.cell {
-    display: flex;
+
+.cells {
+    color: rgb(51, 51, 255);
 }
+
+.cells:hover {
+    color: black;
+}
+
 
 summary {
     list-style: none;
     display: flex;
     font-size: 700;
+    border-top: 1px rgb(201, 201, 201) solid;
+    padding-top: 2%;
+    cursor: pointer;
+    outline: none;
 }
 
 .cell-title {
     width: 100%;
     font-size: large;
-    font-weight: 700;
 }
 .cell-icon {
     width: 18px;
@@ -53,4 +69,13 @@ details:not([open]) .cell-icon-collapsed {
 
 .cells:hover .cell-icon {
     display: unset;
+}
+
+img {
+    width: 100%;
+    padding-top: 2%;
+}
+
+details {
+    padding: 2%;
 }
