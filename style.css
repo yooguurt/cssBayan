@@ -1,0 +1,94 @@
+* {
+    font-family: Fredoka One;
+}
+
+body {
+    background-color: rgb(252, 238, 223);
+    margin: 0;
+}
+
+h1 {
+    color: rgb(209, 144, 74);
+}
+
+.based-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.cells {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40%;
+    color: rgb(51, 51, 255);
+}
+
+.cells:hover {
+    color: black;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    font-size: 700;
+    border-top: 1px rgb(201, 201, 201) solid;
+    padding-top: 2%;
+    cursor: pointer;
+    outline: none;
+}
+
+.cell-title {
+    width: 100%;
+    font-size: large;
+
+}
+
+.cell-icon {
+    width: 18px;
+    text-align: center;
+    display: none;
+}
+
+details .cell-icon-collapsed, details .cell-icon-expanded {
+    display: none;
+}
+
+details[open] .cell-icon-expanded {
+    display: unset;
+}
+
+details:not([open]) .cell-icon-collapsed {
+    display: unset;
+}
+
+.cells:hover .cell-icon {
+    display: unset;
+}
+
+details img {
+    padding-top: 2%;
+    opacity: 0;
+    width: 0;
+    transition: all 0.5s;
+}
+
+details {
+    padding: 2%;
+}
+
+details[open] img {
+    opacity: 1;
+    width: 60%;
+    transition: all 0.5s;
+}
+
+.cell-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
